@@ -1,19 +1,29 @@
 body {
 	padding:30px;
+	margin: 30px;
+	 background-image: url('../images/restaurant.png');
+
+
 }
-h1 {
+
+.text {
 	background-color: rgb(255, 178, 101);
 	height: 100px;
 	width: 350px;
 	padding: 30px;
+	margin-left: 20px;
 	color: white;
+	font-weight: bold;
+
 }
 
 #instructions {
 	background-color: rgb(255, 226, 95);
 	padding:30px;
 	padding-left: 10px;
-	width:600px;
+	margin-left: 20px;
+	margin-top: 10px;
+	width:550px;
 	height: 550px;
 	color: green;
 	font-size: 20px;
@@ -24,3 +34,39 @@ h1 {
 	width:120px;
 }
 
+#square1 {
+	margin-left: 20px;
+	margin-top: 20px;
+	width:290px;
+	height: 130px;
+	background-color: green;
+	font-size: 18px;
+	border-color: black;
+
+}
+#square2 {
+	margin-left: 0px;
+	margin-top: 20px;
+	height: 130px;
+	width: 120px;
+	background-color: cyan;
+	font-size: 18px;
+	border-color: black;
+}
+
+#square3{
+	margin-left: 20px;
+	margin-top: 20px;
+	height:150px;
+	width:290px;
+	font-size: 18px;
+	background-color: red;
+	border-color: black;
+}
+
+.cimage {
+	height: 130px;
+	width: 130px;
+	padding:20px;
+
+}

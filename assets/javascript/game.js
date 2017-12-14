@@ -1,4 +1,6 @@
 
+
+
 $(document).ready(function(){
 
 	var randomNumber = Math.floor(Math.random() *101) + 19;
@@ -33,15 +35,14 @@ $(document).ready(function(){
 		 wins++;
 		 $("#wins").html("Wins: " + wins);
 		 ru();
-	}
+			}
 
-		else if (counter >= randomNumber) {
+		else if (counter > randomNumber) {
 		 losses++;
 		 $("#losses").html("Losses: " + losses);
 		 ru();
 	}
 
-//Reset function
 	ru = function() {
 			var randomNumber = Math.floor(Math.random() *101) + 19;
 				$("#random-number").text(randomNumber);
@@ -51,7 +52,6 @@ $(document).ready(function(){
 			var greenNumber = Math.floor(Math.random() * 12) + 1;
 			var redNumber = Math.floor(Math.random() * 12) + 1;		
 			var yellowNumber = Math.floor(Math.random() * 12) + 1;
-
 		}
 
 

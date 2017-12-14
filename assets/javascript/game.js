@@ -1,7 +1,7 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function() {
 
 	var randomNumber = Math.floor(Math.random() *101) + 19;
 	$("#random-number").text(randomNumber);
@@ -37,23 +37,26 @@ $(document).ready(function(){
 
 
 
-	eval = function(){
+	eval = function() {
 		if (counter === randomNumber) {
 		 wins++;
 		 $("#wins").html("Wins: " + wins);
-		 ru();
+		 $("#you").html("You win!!");
+		ru();
 			}
 
 		else if (counter > randomNumber) {
 		 losses++;
 		 $("#losses").html("Losses: " + losses);
+		 $("#you").html("You lost!!");
 		 ru();
+		 
 	}
 
 
 //reset function
 	ru = function() {
-			var randomNumber = Math.floor(Math.random() *101) + 19;
+			randomNumber = Math.floor(Math.random() *101) + 19;
 				$("#random-number").text(randomNumber);
 			counter = 0;
 			$("#totalScore").text(counter);
@@ -64,7 +67,6 @@ $(document).ready(function(){
 				$("#" +i).attr("cvalue", randomList[i-1]);
 			}	
 			
-
 		}
 
 

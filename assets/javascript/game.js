@@ -16,17 +16,24 @@ $(document).ready(function(){
 			}
 			return li;
 		}
+
+
+
 	var randomList= genRan();
 
 	for(i=1;i<5;i++){
 		$("#" +i).attr("cvalue",randomList[i-1]);
 	}	
 
+
+//on click event
+
 	$(".cimage").on("click", function() {
 			counter += parseInt($(this).attr("cvalue"));
 			$("#totalScore").text(counter);
 			eval();
 	});
+
 
 
 
@@ -43,15 +50,21 @@ $(document).ready(function(){
 		 ru();
 	}
 
+
+//reset function
 	ru = function() {
 			var randomNumber = Math.floor(Math.random() *101) + 19;
 				$("#random-number").text(randomNumber);
 			counter = 0;
 			$("#totalScore").text(counter);
-			var blueNumber = Math.floor(Math.random() * 12) + 1;
-			var greenNumber = Math.floor(Math.random() * 12) + 1;
-			var redNumber = Math.floor(Math.random() * 12) + 1;		
-			var yellowNumber = Math.floor(Math.random() * 12) + 1;
+
+			var randomList= genRan();
+
+			for(i=1; i<5; i++){
+				$("#" +i).attr("cvalue", randomList[i-1]);
+			}	
+			
+
 		}
 
 
